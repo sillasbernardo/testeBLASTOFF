@@ -1,0 +1,142 @@
+<!-- A questão 15 está como questão 14 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 15 - Resposta</title>
+</head>
+<body>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+        }
+
+        #headerId{ grid-area: header; }
+        #menuId{ grid-area: menu; }
+        #mainId{ grid-area: main; }
+        #navId{ grid-area: nav; }
+        #footerId{ grid-area: footer; }
+
+        #page{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 'header header header header'
+                                 'menu main main nav'
+                                 'menu footer footer footer';
+            grid-template-columns: 15% 30% 30% 25%;
+            grid-template-rows: 15% 75% 10%;
+            gap: 5px;
+        }
+
+        .page{
+            border: 1px solid black;
+        }
+
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            margin: 25px 30px;
+        }
+
+        .top>span{
+            background: rgb(182, 182, 182);
+            width: 300px;
+            display: inherit;
+            text-align: center;
+            justify-content: center;
+            padding: 10px 0 0 0;
+            font-size: 30pt;
+            color:antiquewhite;
+            border-radius: 30%;
+        }
+
+        .top>ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .top>ul>li{
+            margin: 0 30px;
+            background: rgb(182, 182, 182);
+            color: black;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #menuId>ul{
+            list-style:disc;
+            
+        }
+
+        #menuId>ul>li{
+            margin: 10px 0;
+        }
+
+        #mainId>h1, #mainId>p{
+            margin: 20px;
+        }
+
+        #mainId>h1{
+            font-size: 18pt;
+        }
+
+        #mainId>p{
+            text-align: justify;
+        }
+
+        #navId>span{
+            margin: 20px;
+        }
+
+    </style>
+
+    <div id="page">
+        <header id="headerId" class="page">
+            <div class="top">
+                <span>Header</span>
+                <ul>
+                    <li>Home</li>
+                    <li>Serviços</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </header>
+        <menu id="menuId" class="page">
+            <ul>
+                <li>Menu 01</li>
+                <li>Menu 02</li>
+                <li>Menu 03</li>
+                <li>Menu 04</li>
+                <li>Menu 05</li>
+                <li>Menu 06</li>
+                <li>Menu 07</li>
+                <li>Menu 08</li>
+                <li>Menu 09</li>
+                <li>Menu 10</li>
+                <li>Menu 11</li>
+            </ul>
+        </menu>
+        <main id="mainId" class="page">
+            <h1>Main</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit pellentesque habitant. Enim tortor at auctor urna. Placerat orci nulla pellentesque dignissim enim sit amet. Ut ornare lectus sit amet est placerat in egestas. Non nisi est sit amet facilisis magna etiam tempor. Bibendum arcu vitae elementum curabitur vitae nunc sed velit. A erat nam at lectus. Scelerisque fermentum dui faucibus in ornare quam viverra. Porta non pulvinar neque laoreet. Est lorem ipsum dolor sit. Quam nulla porttitor massa id. Ultrices dui sapien eget mi proin sed libero. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Faucibus et molestie ac feugiat sed. Volutpat blandit aliquam etiam erat velit scelerisque in.
+
+                Hac habitasse platea dictumst vestibulum rhoncus. Egestas purus viverra accumsan in nisl. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Dignissim convallis aenean et tortor at risus viverra adipiscing. Duis convallis convallis tellus id interdum. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Faucibus interdum posuere lorem ipsum. Turpis massa sed elementum tempus egestas sed sed. In mollis nunc sed id semper. Arcu felis bibendum ut tristique et egestas. Aliquet enim tortor at auctor urna nunc id cursus metus. Ante metus dictum at tempor commodo ullamcorper a.</p>
+        </main>
+        <nav id="navId" class="page">
+            <span>Right</span>
+        </nav>
+        <footer id="footerId" class="page">Footer</footer>
+    </div>
+
+</body>
+</html>

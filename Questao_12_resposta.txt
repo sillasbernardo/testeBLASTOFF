@@ -1,0 +1,11 @@
+*** Questão 12 - Resposta ***
+
+Obs: A questão 12 está como questão 11
+
+Para a questão:
+
+"Em CSS existe uma maneira de sobrescrever um estilo, quando não há
+outra maneira, além dessa, de se fazer isso. Qual das propriedades a seguir é utilizada
+para isso?"
+
+A resposta é a letra C

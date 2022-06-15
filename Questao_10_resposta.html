@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10 - Resposta</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+           display:flex;
+           flex-direction: row;
+           margin: 2%;
+           font-size: 14pt;
+        }
+
+        h3{
+            color: #1f5607;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        #flavor{
+            width: 300px;
+            border-style: none;
+            border: 1px solid #1f5607;
+            font-size: 14pt;
+            padding-left: 10px;
+        }
+
+        #btn{
+            padding: 10px;
+            background: #1f5607;
+            color: white;
+            border-style: none;
+            font-weight: bold;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+    </style>
+
+
+    <div class="container">
+        <h3>Escreva o sabor do sorvete:</h3>
+        <input type="text" name="text" id="flavor">
+        <input type="button" id="btn" value="Enviar">
+    </div>
+
+    
+    <script>
+        var sorvete_de_chocolate = undefined;
+        const button = document.getElementById('btn');
+
+        if (button){
+            button.addEventListener("click", iceCream);
+        };
+
+        function iceCream(){
+            sorvete_de_chocolate = document.getElementById('flavor').value;
+            sorvete_de_chocolate = sorvete_de_chocolate.toLowerCase();
+            
+            if (sorvete_de_chocolate === "chocolate"){
+                window.alert("Amo sorvete de chocolate");
+            }else{
+                window.alert("Prefiro outros sabores");
+            }
+        };
+    </script>
+
+</body>
+</html>
